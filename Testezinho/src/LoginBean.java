@@ -10,11 +10,11 @@ public class LoginBean {
 
 	public String logar() {
 		if ("Hick".equals(getLogin()) && "1234".equals(getSenha())) {
-			System.out.println("Bem vindo caralhudo: " + getLogin());
+			System.out.println("Bem vindo: " + getLogin());
 			return "cadastro?faces-redirect=true";
 			
 		} else {
-			System.out.println("Usuario n„o altorizado");
+			System.out.println("Usuario n√£o altorizado");
 			FacesMessage mensagem = new FacesMessage("Usuario invalido!");
 			FacesContext.getCurrentInstance().addMessage(null, mensagem);
 			
